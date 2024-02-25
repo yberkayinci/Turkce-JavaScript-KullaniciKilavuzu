@@ -1,0 +1,54 @@
+/* Web sayfamın temel stil tanımlamaları */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Kullandığım kollapslanabilir öğeler ve etkileşim durumları için stil tanımları */
+.collapsible, .collapsible:hover, .active {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+/* Kollapslanabilir öğelerin üzerine gelindiğinde veya aktif olduğunda arka plan rengi */
+.collapsible:hover, .active {
+    background-color: #555;
+}
+
+/* İçerik bölümü stil tanımları */
+.content {
+    padding: 0 18px;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    transition: max-height 0.2s ease-out;
+    display: none; /* İçerik başlangıçta gizli olarak ayarlandı */
+}
+
+/* Karanlık mod için stil tanımları */
+.dark-mode {
+    background-color: #333;
+    color: #cdc4b4;
+}
+
+/* Karanlık modda içerik stil tanımları */
+.dark-mode .content {
+    background-color: #454545; /* Karanlık modda içerik arka planı */
+    color: #cdc4b4; /* Karanlık modda içerik metin rengi */
+}
+
+/* Sayfa bileşenleri için padding tanımları */
+header, nav, main, footer {
+    padding: 20px;
+}
